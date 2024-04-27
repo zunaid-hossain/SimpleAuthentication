@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main %}
+  {% if messages %}
+    {% for m in messages %}
+      <p class="bg-success p-2 text-white">{{ m }}</p>
+    {% endfor %}
+  {% endif %}
+
+
+  
+  
+  <h1>This is the profile page</h1>
+
+  <a href="{% url 'Pass' %}" class="btn btn-outline-success mx-2">Change pass</a>
+  <a href="{% url 'fpass' %}" class="btn btn-outline-success">Forget Pass</a>
+{% endblock %}
