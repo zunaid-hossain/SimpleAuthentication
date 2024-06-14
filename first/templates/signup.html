@@ -10,7 +10,7 @@
 <form method="post"  class="w-50 m-auto ">
     {% csrf_token %}
 
-    {{form|crispy}}
+    {{user|crispy}}
 
     <button class="btn btn-outline-success" type="submit">Submit</button>
 
